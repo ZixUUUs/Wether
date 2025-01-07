@@ -4,7 +4,7 @@ const btn = document.querySelector(".getData");
 
 async function GetData() {
   const city = search.value || "Algeria";
-  const Url = `http://api.weatherapi.com/v1/current.json?key=48c256f5e99148d1be6151213250701&q=${city}&aqi=no`;
+  const Url = `https://api.weatherapi.com/v1/current.json?key=48c256f5e99148d1be6151213250701&q=${city}&aqi=no`;
 
   try {
     const response = await fetch(Url);
